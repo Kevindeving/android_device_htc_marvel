@@ -19,6 +19,8 @@ ro.telephony.ril.v3=signalstrength,skipbrokendatacall
 # Modify MMS APN retry timer from 5s to 2s.
 ro.gsm.2nd_data_retry_config = max_retries=3, 2000, 2000, 2000
 
+ro.sf.lcd_density=160
+
 # For HSDPA low throughput
 ro.ril.disable.power.collapse = 1
 
