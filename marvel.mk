@@ -59,6 +59,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Torch
 
+# OmniTorch
+PRODUCT_PACKAGES += OmniTorch
+
 ## Additonal packages
 PRODUCT_PACKAGES += \
     Email2 \
