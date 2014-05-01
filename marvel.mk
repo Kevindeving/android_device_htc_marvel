@@ -57,7 +57,7 @@ PRODUCT_PACKAGES += \
 # Install software application packages
 ## Marvel-supported packages
 PRODUCT_PACKAGES += \
-    Torch
+    OmniTorch
 
 ## Additonal packages
 PRODUCT_PACKAGES += \
