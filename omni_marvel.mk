@@ -1,40 +1,28 @@
+# Licensed under the Apache License, Version 2.0.
 # Copyright (C) 2009 The Android Open Source Project
-# Copyright (C) 2014 Olivier K.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
+# Copyright (C) 2011 The OmniROM Project
+# Copyright (C) 2014 Benjamin Gwynn <http://xenxier.tk>
+# Re-written by Benjamin Gwynn
 
-# Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Call our device's AOSP device config.
+$(call inherit-product, device/htc/marvel/full_marvel.mk)
 
-# Call our device's makefile.
-$(call inherit-product, device/htc/marvel/marvel.mk)
-
-# Inherit from our custom product configuration
+# Inherit common Omni stuff
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
-# Install Google Apps if available
-$(call inherit-product-if-exists, vendor/google/gapps_armv6_tiny.mk)
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 480
+TARGET_SCREEN_WIDTH := 320
 
-PRODUCT_DEVICE := marvel
+# Overrides for Omni
 PRODUCT_NAME := omni_marvel
-PRODUCT_BRAND := htc_europe
-PRODUCT_MODEL := Wildfire S A510e
-PRODUCT_MANUFACTURER := HTC
-PRODUCT_CHARACTERISTICS := phone
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_marvel
+PRODUCT_DEVICE := marvel
 
+# Release name and versioning
 PRODUCT_RELEASE_NAME := WildfireS
-PRODUCT_VERSION_DEVICE_SPECIFIC := -A510
+PRODUCT_VERSION_DEVICE_SPECIFIC :=
+BUILD_ID := KVT49L
 
+## Assign the build fingerprint to the build.prop file.
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=omnirom/htc_marvel/marvel:4.4.2/$(BUILD_ID)/v0.1:user/release-keys
