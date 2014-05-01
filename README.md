@@ -26,7 +26,7 @@ Device configuration for the HTC Wildfire S A510e (marvel).
 
 * Building
 
-  Todo. Basically, normal CM build except use our manifest. Or
+  Todo. Basically, normal Omni build except use our manifest. Or
   use a local manifest and point it here.
 
 
@@ -34,7 +34,7 @@ Device configuration for the HTC Wildfire S A510e (marvel).
 
   - Andreas Schneider
   - OWL Project
-  - CyanogenMod
+  - OmniROM
   - alquez
   - Droste
   - pabloPL
