@@ -11,8 +11,7 @@ LOCAL_DIR := device/htc/marvel
 LOCAL_PATH := $(LOCAL_DIR)
 
 ## Call vendors:
-$(call inherit-product, vendor/htc/marvel/marvel-vendor.mk)
-$(call inherit-product, vendor/htc/msm7x27-common/vendor.mk)
+$(call inherit-product, vendor/htc/marvel/marvel-vendor.mk)		# Include marvel vendor
 
 # Permissions
 ## Copy the following permission files for our hardware.
