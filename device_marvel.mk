@@ -41,6 +41,11 @@ PRODUCT_COPY_FILES += \
     device/htc/marvel/init.marvel.rc:root/init.marvel.rc \
     device/htc/marvel/ueventd.marvel.rc:root/ueventd.marvel.rc
 
+# Copy prebuilt kernel & wifi module
+PRODUCT_COPY_FILES += \
+    device/htc/marvel/prebuilt/lib/modules/bcm4329.ko:system/lib/modules/bcm4329.ko \
+    device/htc/marvel/prebuilt/kernel:kernel
+
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libhtc_ril.so \
     ro.ril.enable.dtm=1 \
