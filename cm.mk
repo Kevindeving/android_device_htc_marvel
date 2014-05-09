@@ -11,6 +11,10 @@ $(call inherit-product, device/htc/marvel/full_marvel.mk)
 $(call inherit-product, vendor/cm/config/gsm.mk)
 $(call inherit-product, vendor/cm/config/mini.mk)
 
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 480
+TARGET_SCREEN_WIDTH := 320
+
 # Overrides for CM
 PRODUCT_NAME := cm_marvel
 PRODUCT_DEVICE := marvel
