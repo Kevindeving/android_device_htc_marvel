@@ -95,10 +95,3 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.primary.marvel \
     audio_policy.marvel
-
-# Device identifier
-PRODUCT_DEVICE := marvel
-PRODUCT_NAME := full_marvel
-PRODUCT_BRAND := htc_europe
-PRODUCT_MODEL := Wildfire S A510e
-PRODUCT_MANUFACTURER := HTC
